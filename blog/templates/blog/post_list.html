@@ -11,19 +11,15 @@
         <h3>Autor: Adam Tomaszewski</h3>
         <h4>Wszelkie prawa zastrzeżone</h4>
     </div>
+    {% comment %}
+    Tutaj lista postów
+    {% endcomment %}
+    {% for post in posts %}
     <div>
-        <p>To jest akapit</p>
-        <em>To jest wyróżniony tekst</em><br>
-        <strong>To jest pogrubiony</strong><br>
-        <a href="https://www.wp.pl/">LINK</a>
+        <p>opublikowany: {{ post.publish_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <em>{{ post.text|linebreaksbr }}</em>
     </div>
-    <div>
-        <ul>
-            <li>Elementy listy</li>
-            <li>Elementy listy</li>
-            <li>Elementy listy</li>
-        </ul>
-    </div>
-
+    {% endfor %}
 </body>
 </html>
