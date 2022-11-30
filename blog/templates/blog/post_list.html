@@ -6,6 +6,7 @@
                 <p><br>opublikowany: {{ post.publish_date }}</p>
                 </div>
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                <img src="{{ hotel.image.url }}" alt="hotel1" width="100px">
             <em>{{ post.text|linebreaksbr }}</em>
             </div>
             {% endfor %}
