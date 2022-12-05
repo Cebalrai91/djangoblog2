@@ -1,28 +1,12 @@
-h1 a,h2 a{
+.page-header {
+    background-color: #000000;
+    margin-top: 5px;
+    padding: 10px 50px 0px 0px;
     color: #000000;
-}
-
-body {
-    padding-left:15px;
-    font-family: 'Lato', sans-serif;
-}
-
-.page-header{
-    background-color: #C25100;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-    text-align: center;
-}
-
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
-}
-
-
-.data{
-color: #000000;
+    width:70%;
+    border-style: hidden;
 }
 
 
